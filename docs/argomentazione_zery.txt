@@ -1,0 +1,49 @@
+ZERI DI FUNZIONE:
+
+Gli "zeri" di una funzione sono i valori dell'input della funzione che restituiscono un output di zero.
+In altre parole, sono i punti in cui il grafico della funzione attraversa l'asse delle ordinate,
+ovvero i punti in cui la funzione assume il valore zero.
+
+Matematicamente, se consideriamo una funzione f(x), gli "zeri" della funzione sono i valori x per i quali f(x) = 0.
+Ad esempio, se abbiamo la funzione f(x) = x^2 - 4,
+gli zeri della funzione sono i valori di x che soddisfano l'equazione x^2 - 4 = 0.
+In questo caso specifico, gli zeri sono x = -2 e x = 2,
+poiché sostituendo questi valori nell'equazione otteniamo: (-2)^2 - 4 = 0 e (2)^2 - 4 = 0.
+
+Gli zeri di una funzione sono importanti perché ci forniscono informazioni sui punti in cui la funzione si annulla
+o interseca l'asse delle x.
+Possono essere utilizzati per determinare i punti di intersezione tra due funzioni, le radici di un'equazione associata alla funzione
+o le soluzioni di un problema specifico.
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ARGOMENTAZIONE DEL CODICE zery.py:
+
+Le funzioni f(x) e g(x) sono le funzioni matematiche di cui vogliamo trovare gli zeri.
+La funzione f(x) rappresenta l'equazione x - cos(x) 
+la funzione g(x) rappresenta l'equazione x - exp(-x)
+In Python, exp(-x) rappresenta la funzione esponenziale in cui la base dell'esponente è il numero di Eulero 'e' (circa 2.71828).
+Questa funzione calcola il valore di e elevato alla potenza di -x. 
+
+Le funzioni bisezioni() e newton() utilizzano la funzione f(x) (o g(x)) all'interno del loro corpo per calcolare il valore della funzione
+e della sua derivata. Questi valori vengono utilizzati per iterare e approssimare lo zero della funzione.
+
+La funzione bisezioni(f, a, b, tol, itmax) implementa il metodo delle successive bisezioni per calcolare uno zero della funzione f(x)
+nell'intervallo [a, b].
+Prende in input la funzione f(x), gli estremi dell'intervallo a e b, la precisione richiesta tol
+e il numero massimo di iterazioni consentite itmax.
+Restituisce un'approssimazione dello zero c e il numero di iterazioni eseguite it.
+
+La funzione newton(f, x0, tol, itmax) implementa il metodo di Newton per calcolare uno zero della funzione f(x) 
+partendo da una stima iniziale x0.
+Prende in input la funzione f(x), la stima iniziale x0, la precisione richiesta tol e il numero massimo di iterazioni consentite itmax.
+Restituisce un'approssimazione dello zero x1 e il numero di iterazioni eseguite it.
+
+Sono due metodi numerici differenti per risolvere equazioni non lineari.
+Il metodo delle bisezioni divide iterativamente l'intervallo di ricerca a metà fino a trovare un'approssimazione dello zero,
+mentre il metodo di Newton utilizza la derivata della funzione per calcolare una successione di approssimazioni che
+convergono allo zero desiderato.
+
+Entrambe le equazioni sono non lineari, ovvero equazioni in cui gli incogniti non sono semplicemente moltiplicati o divisi tra loro,
+ma possono essere presenti in modo più complesso, come in termini di potenze, esponenziali o funzioni trigonometriche.
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+

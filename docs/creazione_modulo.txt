@@ -1,0 +1,42 @@
+Avviare un terminale Python in VSC:
+1. Digitare "Python" nel classico terminale/shell
+
+Esempio creazione di un modulo in Python ed utilizzo comandi dal prompt Python:
+1. Salvare il file con il nome programmi.py
+
+2. Sotto la prima riga di una funzione aggiungere una tripla di doppi apici, in apertura e chiusura (per commentare), esempio:
+"""
+Calcola le radici (reali) di un'equazione di secondo grado
+"""
+
+3. (PROMPT PYTHON) comandi:
+>>> import programmi <-- programmi.py e' formalmente un modulo che potra' contenere diverse funzioni
+>>> type(programmi) <-- restituisce il tipo di dato dell'oggetto 
+>>> dir(programmi) <-- restituisce i nomi degli oggetti definiti nel modulo
+>>> programmi.eq2(1,-5,6) <-- Esegue il metodo eq2 "equazione di secondo grado" presente nel modulo programmi
+>>> del programmi <-- rimuove l'oggetto o la variabile programmi dalla memoria. 
+>>> import programmi as pr <-- ricarica il modulo aggiornato con un alias
+>>> pr.eq2(1,-5,6) <-- esecuzione di una funzione dal prompt 
+
+4. (PROMPT PYTHON) Stampa dei commenti delle varie funzioni:
+>>> help(pr.eq2) nel namespace corrente <-- Stampa il "python doc"
+>>> pr.eq2.doc
+
+INFORMAZIONI EXTRA:
+
+Il modulo os:
+
+Il modulo os gestisce diverse funzionalità del sistema operativo.
+E'spesso utile se si desidera rendere i programmi \platform-independent", ovvero renderli eseguibili indipendentemente dal sistema operativo utilizzato
+(Windows, Linux, Mac, ecc.).
+
+Essendo un modulo, va importato mediante il comando
+>>> import os 
+
+"""
+Ulteriore informazioni sono presenti nel pdf introduzione a Python di Calcolo Numerico.
+"""
+
+
+
+

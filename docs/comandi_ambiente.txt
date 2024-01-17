@@ -1,0 +1,35 @@
+# Attivare l'ambiente virtuale
+.\Scripts\activate
+
+# Disattivare l'ambiente virtuale
+deactivate
+
+# Installare una libreria con pip
+pip install nome_libreria
+
+# Aggiornare una libreria con pip
+pip install --upgrade nome_libreria
+
+# Mostrare le librerie installate
+pip list
+
+# Mostrare le librerie installate con dettagli
+pip show nome_libreria
+
+# Creare un file requirements.txt
+pip freeze > requirements.txt
+
+# Installare librerie da un file requirements.txt
+pip install -r requirements.txt
+
+# Eseguire uno script Python
+python nome_script.py
+
+# Eseguire uno script Python in modalità interattiva (REPL)
+python
+
+# Verificare la versione di Python
+python --version
+
+# Creare un ambiente virtuale con versione specifica di Python
+python -m venv nome_ambiente

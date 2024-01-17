@@ -1,0 +1,45 @@
+Librerie più famose e ampiamente utilizzate:
+
+# NumPy:
+
+Libreria per l'elaborazione numerica, fornisce supporto per array multidimensionali e funzioni matematiche avanzate.
+
+# Scipy:
+
+Collezione di metodi numerici e tool che coprono diverse aree del calcolo scientifico
+
+# Pandas:
+
+Libreria per la manipolazione e l'analisi dei dati, offre strutture dati potenti come DataFrame.
+
+# Matplotlib:
+
+Libreria per la creazione di grafici e visualizzazioni.
+
+# Scikit-learn:
+
+Libreria per l'apprendimento automatico (machine learning) con implementazioni di algoritmi comuni.
+
+# TensorFlow e PyTorch:
+
+Librerie per l'apprendimento profondo (deep learning).
+
+# Django e Flask:
+
+Framework web per la creazione di applicazioni web.
+
+# Requests:
+
+Libreria per effettuare richieste HTTP.
+
+# Beautiful Soup:
+
+Libreria per l'estrazione di informazioni da pagine web (web scraping).
+
+# OpenCV:
+
+Libreria per la computer vision e il riconoscimento di immagini.
+
+# SQLAlchemy:
+
+Libreria per l'interazione con database SQL.
